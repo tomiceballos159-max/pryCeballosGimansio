@@ -61,6 +61,7 @@
             tbDatosPersonales.Controls.Add(tbDatos);
             tbDatosPersonales.Controls.Add(tbPlanMensual);
             tbDatosPersonales.Controls.Add(tbPago);
+            tbDatosPersonales.ImeMode = ImeMode.NoControl;
             tbDatosPersonales.Location = new Point(12, 12);
             tbDatosPersonales.Name = "tbDatosPersonales";
             tbDatosPersonales.SelectedIndex = 0;
@@ -75,7 +76,7 @@
             tbDatos.Controls.Add(txtNombre);
             tbDatos.Controls.Add(lblEdad);
             tbDatos.Controls.Add(lblNombre);
-            tbDatos.ForeColor = SystemColors.ActiveCaptionText;
+            tbDatos.ForeColor = Color.Black;
             tbDatos.Location = new Point(4, 24);
             tbDatos.Name = "tbDatos";
             tbDatos.Padding = new Padding(3);
@@ -242,7 +243,7 @@
             // 
             cmbCuotas.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbCuotas.FormattingEnabled = true;
-            cmbCuotas.Items.AddRange(new object[] { "1 cuota", "3 cuotas", "6 cuotas" });
+            cmbCuotas.Items.AddRange(new object[] { "1 cuota", "3 cuotas (+10% Recargo)", "6 cuotas(+20% Recargo)" });
             cmbCuotas.Location = new Point(83, 39);
             cmbCuotas.Name = "cmbCuotas";
             cmbCuotas.Size = new Size(121, 23);
@@ -302,6 +303,9 @@
             Controls.Add(btnCalcular);
             Controls.Add(btnConsultar);
             Controls.Add(tbDatosPersonales);
+            ForeColor = Color.Black;
+            FormBorderStyle = FormBorderStyle.Fixed3D;
+            FormScreenCaptureMode = ScreenCaptureMode.HideWindow;
             Name = "frmInscripcion";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmInscripcion";

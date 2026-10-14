@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Drawing.Text;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Windows.Forms;
-
-namespace pryCeballosGimansio
+﻿namespace pryCeballosGimansio
 {
     public partial class frmInscripcion : Form
     {
@@ -74,18 +64,6 @@ namespace pryCeballosGimansio
 
         }
 
-
-        private void frmInscripcion_Load(object sender, EventArgs e)
-        {
-
-            {
-
-            }
-
-
-        }
-
-        //evento para habilitar o deshabilitar el comboBox de cuotas segun la opcion
         private void rbTarjeta_CheckedChanged(object sender, EventArgs e)
         {
             if (rbTarjeta.Checked == true)
@@ -409,6 +387,11 @@ namespace pryCeballosGimansio
             frmConsultas consulta = new frmConsultas(arrayClientes);
             consulta.ShowDialog();
             this.Show();
+        }
+
+        private void frmInscripcion_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
