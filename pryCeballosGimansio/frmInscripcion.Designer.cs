@@ -69,18 +69,19 @@
             // 
             // tbDatos
             // 
+            tbDatos.BackColor = Color.DarkSalmon;
             tbDatos.Controls.Add(cbEstudiante);
             tbDatos.Controls.Add(txtEdad);
             tbDatos.Controls.Add(txtNombre);
             tbDatos.Controls.Add(lblEdad);
             tbDatos.Controls.Add(lblNombre);
+            tbDatos.ForeColor = SystemColors.ActiveCaptionText;
             tbDatos.Location = new Point(4, 24);
             tbDatos.Name = "tbDatos";
             tbDatos.Padding = new Padding(3);
             tbDatos.Size = new Size(298, 165);
             tbDatos.TabIndex = 0;
             tbDatos.Text = "Datos Personales";
-            tbDatos.UseVisualStyleBackColor = true;
             // 
             // cbEstudiante
             // 
@@ -94,6 +95,7 @@
             // 
             // txtEdad
             // 
+            txtEdad.BackColor = Color.Coral;
             txtEdad.Location = new Point(74, 71);
             txtEdad.Name = "txtEdad";
             txtEdad.Size = new Size(100, 23);
@@ -103,6 +105,7 @@
             // 
             // txtNombre
             // 
+            txtNombre.BackColor = Color.Coral;
             txtNombre.Location = new Point(74, 29);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(100, 23);
@@ -129,6 +132,7 @@
             // 
             // tbPlanMensual
             // 
+            tbPlanMensual.BackColor = Color.DarkSalmon;
             tbPlanMensual.Controls.Add(cbCasillero);
             tbPlanMensual.Controls.Add(cmbPlan);
             tbPlanMensual.Controls.Add(cmbTurno);
@@ -142,7 +146,6 @@
             tbPlanMensual.Size = new Size(298, 165);
             tbPlanMensual.TabIndex = 1;
             tbPlanMensual.Text = "Plan Mensual";
-            tbPlanMensual.UseVisualStyleBackColor = true;
             // 
             // cbCasillero
             // 
@@ -156,6 +159,7 @@
             // 
             // cmbPlan
             // 
+            cmbPlan.BackColor = Color.Coral;
             cmbPlan.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbPlan.FormattingEnabled = true;
             cmbPlan.Items.AddRange(new object[] { "Musculacion", "Funcional", "Natacion" });
@@ -166,6 +170,7 @@
             // 
             // cmbTurno
             // 
+            cmbTurno.BackColor = Color.Coral;
             cmbTurno.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbTurno.FormattingEnabled = true;
             cmbTurno.Items.AddRange(new object[] { "Mañana (7 a 12 hs)", "Tarde (14 a 18 hs)", "Noche (18 a 23 hs)" });
@@ -176,6 +181,7 @@
             // 
             // txtMeses
             // 
+            txtMeses.BackColor = Color.Coral;
             txtMeses.Location = new Point(66, 53);
             txtMeses.Name = "txtMeses";
             txtMeses.Size = new Size(111, 23);
@@ -212,6 +218,7 @@
             // 
             // tbPago
             // 
+            tbPago.BackColor = Color.DarkSalmon;
             tbPago.Controls.Add(rbTarjeta);
             tbPago.Controls.Add(cmbCuotas);
             tbPago.Controls.Add(rbEfectivo);
@@ -220,7 +227,6 @@
             tbPago.Size = new Size(298, 165);
             tbPago.TabIndex = 3;
             tbPago.Text = "Pago";
-            tbPago.UseVisualStyleBackColor = true;
             // 
             // rbTarjeta
             // 
@@ -256,39 +262,42 @@
             // 
             // btnLimpiar
             // 
+            btnLimpiar.BackColor = Color.Coral;
             btnLimpiar.Location = new Point(226, 230);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(75, 23);
             btnLimpiar.TabIndex = 5;
             btnLimpiar.Text = "Limpiar";
-            btnLimpiar.UseVisualStyleBackColor = true;
+            btnLimpiar.UseVisualStyleBackColor = false;
             // 
             // btnCalcular
             // 
+            btnCalcular.BackColor = Color.Coral;
             btnCalcular.Location = new Point(145, 230);
             btnCalcular.Name = "btnCalcular";
             btnCalcular.Size = new Size(75, 23);
             btnCalcular.TabIndex = 6;
             btnCalcular.Text = "Calcular";
-            btnCalcular.UseVisualStyleBackColor = true;
-            btnCalcular.EnabledChanged += btnCalcular_Click;
+            btnCalcular.UseVisualStyleBackColor = false;
             btnCalcular.Click += btnCalcular_Click;
             // 
             // btnConsultar
             // 
+            btnConsultar.BackColor = Color.Coral;
             btnConsultar.Location = new Point(33, 230);
             btnConsultar.Name = "btnConsultar";
             btnConsultar.Size = new Size(75, 23);
             btnConsultar.TabIndex = 7;
             btnConsultar.Text = "Consultar";
-            btnConsultar.UseVisualStyleBackColor = true;
+            btnConsultar.UseVisualStyleBackColor = false;
             btnConsultar.Click += btnConsultar_Click;
             // 
             // frmInscripcion
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(330, 450);
+            BackColor = Color.LightSalmon;
+            ClientSize = new Size(330, 282);
             Controls.Add(btnLimpiar);
             Controls.Add(btnCalcular);
             Controls.Add(btnConsultar);

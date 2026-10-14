@@ -38,12 +38,12 @@
             lstConsultas.FormattingEnabled = true;
             lstConsultas.Location = new Point(12, 12);
             lstConsultas.Name = "lstConsultas";
-            lstConsultas.Size = new Size(352, 214);
+            lstConsultas.Size = new Size(611, 214);
             lstConsultas.TabIndex = 0;
             // 
             // btnVer
             // 
-            btnVer.Location = new Point(195, 253);
+            btnVer.Location = new Point(218, 253);
             btnVer.Name = "btnVer";
             btnVer.Size = new Size(75, 23);
             btnVer.TabIndex = 1;
@@ -53,7 +53,7 @@
             // 
             // btnVovler
             // 
-            btnVovler.Location = new Point(289, 253);
+            btnVovler.Location = new Point(349, 253);
             btnVovler.Name = "btnVovler";
             btnVovler.Size = new Size(75, 23);
             btnVovler.TabIndex = 2;
@@ -64,11 +64,12 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(376, 450);
+            ClientSize = new Size(635, 294);
             Controls.Add(btnVovler);
             Controls.Add(btnVer);
             Controls.Add(lstConsultas);
             Name = "frmConsultas";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "frmConsultas";
             ResumeLayout(false);
         }

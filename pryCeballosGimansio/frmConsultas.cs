@@ -17,7 +17,7 @@ namespace pryCeballosGimansio
         {
             InitializeComponent();
 
-            clientes = listaClientes;
+            clientes = listaclientes;
         }
         private void btnVolver_Click(object sender, EventArgs e)
         {
